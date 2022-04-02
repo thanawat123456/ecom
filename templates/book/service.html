@@ -1,0 +1,60 @@
+{% extends "layouts/base.html" %}
+{% load humanize %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block title %}Book Add{% endblock %}
+
+{% block content %}
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center"> 
+  <img src="{% static 'image/protion.png' %}" width ="600">
+</div>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h5 class="my-0 fw-normal">รับข้อมูลข่าวสารต่างๆ</h5>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>การอัพเดตรายการสินค้า</li>
+            <li>การอัพเดตโปรโมชั่นต่างๆ</li>
+          </ul>
+          <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">รับการแจ้งเตือน</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h5 class="my-0 fw-normal">โปรโมชั่นสำหรับลูกค้าใหม่</h5>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>ซื้อสินค้า3ชิ้นขึ้นไป ฟรีค่าส่ง!!</li>
+            <li>สมัครสมาชิกรายเดือนเพื่อรับส่วนลด</li>
+            <li>รับข้อมูลข่าวสารเพิ่มเติม</li>
+          </ul>
+          <!-- <button type="button" class="w-100 btn btn-lg btn-primary">สมัครสมาชิก</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-white bg-primary border-primary">
+          <h5 class="my-0 fw-normal">โปรโมชั่นสำหรับลูกค้ารายเดือน</h5>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title pricing-card-title">59 บาท<small class="text-muted fw-light">/เดือน</small></h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>รับส่วนลดทุกสัปดาห์</li>
+            <li>ฟรีของแถมทุกออเดอร์</li>
+            <li>รับข้อมูลอัพเดตสินค้า</li>
+          </ul>
+          <!-- <button type="button" class="w-100 btn btn-lg btn-primary">ช้อปปิ้งกันเลย</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

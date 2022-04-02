@@ -1,0 +1,70 @@
+{% extends "layouts/base.html" %}
+{% load humanize %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block title %}Book Add{% endblock %}
+
+{% block content %}
+
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center"> 
+    <img src="{% static 'image/about.webp' %}" width ="300">
+    <h1 class="display-4 fw-normal">About Us</h1>
+    <h5 class="fs-5 text-muted">Ordinary Stationary Shop เกิดจากการที่ทีมเราชอบสะสมเครื่องเขียนและสนใจเกี่ยวกับ e-commerce จึงเกิดการพัฒนาเว็บไซต์นี้ขึ้น เว็บไซต์ของเรามีอุปกรณ์เครื่องเขียนที่หลากหลาย จัดเป็นหมวดหมู่ สามารถเลือกดูได้ง่าย และมีโทนสีแนว Earth tone ทำให้สบายตาและสีสันที่น่ารักน่าเลือกซื้อ</h5>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-left">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h5 class="my-0 fw-normal">ฝ่ายบริหาร</h5>
+        </div>
+        <div class="card-body">
+
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>1> กมลวรรณ อาจสูงเนิน</li>
+            <li>เบอร์โทรศัพท์: 0985785340</li>
+            <li>E-mail: kamolwan.a@kkumail.com</li>
+            <li>2> ชลิตา ศรศักดา</li>
+            <li>เบอร์โทรศัพท์: 0612955989</li>
+            <li>E-mail: chalita.sornsakda@kkumail.com</li>
+          </ul>
+          <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">รับการแจ้งเตือน</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h5 class="my-0 fw-normal">ฝ่ายการตลาด</h5>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>1> จุฑาภรณ์ ทาน้อย</li>
+            <li>เบอร์โทรศัพท์: 0994598411</li>
+            <li>E-mail: juthaporn_th@kkumail.com</li>
+          </ul>
+          <!-- <button type="button" class="w-100 btn btn-lg btn-primary">สมัครสมาชิก</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-white bg-primary border-primary">
+          <h5 class="my-0 fw-normal">ฝ่ายประชาสัมพันธ์</h5>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>1> พัทธนันท์ หินเธาว์</li>
+            <li>เบอร์โทรศัพท์: 092-8468407</li>
+            <li>E-mail: phatthanan_hi@kkumail.com</li>
+            <li>2> ศุภิสรา โนวะ</li>
+            <li>เบอร์โทรศัพท์: 0646510914</li>
+            <li>E-mail: supisarano@kkumail.com</li>
+          </ul>
+          <!-- <button type="button" class="w-100 btn btn-lg btn-primary">ช้อปปิ้งกันเลย</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

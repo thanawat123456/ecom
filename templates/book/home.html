@@ -1,0 +1,40 @@
+{% extends "layouts/base.html" %}
+{% load humanize %}
+{% load static %}
+
+{% block title %}Book Page{% endblock %}
+
+{% block content %}
+
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center"> 
+    <img src="{% static 'image/logo1.png' %}" width ="300">
+    <h5 class="fs-5 text-muted">ร้านเครื่องเขียนสไตล์มินิมอล ดีไซน์น่ารัก มีรายการเครื่องเขียน เช่น ปากกา ดินสอ สมุดบันทึก ไดอารี่ ปฏิทิน 
+        และสินค้าเบ็ดเตล็ดต่างๆอีกมากมาย ลูกค้าที่น่ารักทุกท่านสามารถเรียกดูสินค้าต่างๆภายในเว็บไซต์ของเราได้อย่างหลากหลาย 
+      ขอให้สนุกกับการช้อปปิ้งน้า ^__^</h5>
+  </div>
+  <style>    
+    .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffbdb1f8;
+    padding: 20px;
+  } 
+  </style>
+
+  <main>
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center"> 
+      <section class="image collection" style="background-color: #ffbdb1f8">
+        <div class="grid-container">
+          <div class="grid-item"><img src="{% static 'image/show1.jpg' %}" width ="400"></div>
+          <div class="grid-item"><img src="{% static 'image/show2.jpg' %}" width ="400"></div>
+          <div class="grid-item"><img src="{% static 'image/show3.jpg' %}" width ="400"></div>
+        </div>
+      </section>
+    </div>
+</div>
+{% endblock %}
+

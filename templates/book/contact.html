@@ -1,0 +1,42 @@
+{% extends "layouts/base.html" %}
+{% load humanize %}
+{% load crispy_forms_tags %}
+
+{% block title %}Book Add{% endblock %}
+
+{% block content %}
+
+{% if status %} 
+    {% if status == 'success' %}
+    <div class="alert alert-success">
+        <strong>Success!</strong> Information Successfully!</div>
+    {% else %}
+    <div class="alert alert-danger">
+        <div class="alert alert-warning">
+            <strong>Warning!</strong> Please fill out the information completely!</div>
+    {% endif %}
+          
+{% endif %}
+
+<div class="constainer"> 
+    <form method="POST">
+        {% csrf_token %}
+
+        <div class="form-group">
+             <label method="POST">Ask more</label>
+             <input class="form-control" type="text" name="title" id="title">
+        </div><br>
+        <div class="form-group">
+            <label method="email">E-mail</label>
+             <input class="form-control" type="text" name="email" id="email">
+        </div><br>
+
+        <div class="form-group">
+            <label method="Comment">Comment</label>
+        <textarea class="form-control" rows="5" id="Comment" name="Comment"></textarea>
+        </div><br><br>
+
+        <button type="Submit" class="btn btn-primary">Send Message</button>
+    </form>
+</div>
+{% endblock %}
